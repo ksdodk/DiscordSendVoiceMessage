@@ -47,7 +47,7 @@ message_data = {
         'filename': 'voice-message.ogg',
         'uploaded_filename': upload_filename,
         'duration_secs': 0.000001,
-        'waveform': 'FzYACgAAAAAAACQAAAAAAAA='
+        'waveform': base64.b64encode(voice_data[:100]).decode("utf-8") 
     }]
 }
 
